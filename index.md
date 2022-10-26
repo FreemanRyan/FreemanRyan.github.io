@@ -1,7 +1,10 @@
 <html>
 
 <head>
+    <title>joseph personal page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/joseph/favicon.ico"
 </head>
+
 <body>
 
 <div style="position: absolute; bottom: 10px; right: 10px;" > 
