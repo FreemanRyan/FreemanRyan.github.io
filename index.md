@@ -2,8 +2,9 @@
 
 <head>
     <title>joseph personal page</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/joseph/favicon.ico"
+    <link rel="shortcut icon" type="image/x-icon" href="/joseph/favicon.ico">
 </head>
+
 
 <body>
 
