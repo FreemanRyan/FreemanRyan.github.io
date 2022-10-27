@@ -1,8 +1,39 @@
 <html>
 
 <head>
-<title>joseph personal page</title>
-<link rel="shortcut icon" href="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/5baf58e1d4748497629ed2cfb45f6ddc11a0ee854d3c6583f2f3f51f58048a2b5ddde5139525a2ee1d4dfe36a602097d?pictype=scale&amp;from=30113&amp;version=3.3.3.3&amp;uin=215147283&amp;fname=favicon-web-best.jpg&amp;size=750" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Booksiying</title>
+<meta name="generator" content="Jekyll v3.9.2">
+<meta property="og:title" content="Booksiying">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://freemanryan.github.io/joseph/">
+<meta property="og:url" content="https://freemanryan.github.io/joseph/">
+<meta property="og:site_name" content="joseph">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="joseph">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Booksiying","name":"joseph","url":"https://freemanryan.github.io/joseph/"}</script>
+
+
+
+
+    <link rel="stylesheet" href="/joseph/assets/css/style.css?v=25eb1b91fd28332b4b46c1dbf0b2d7bcbde1481d">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<link rel="shortcut icon" type="image/x-icon" href="/joseph/favicon.ico">
+
+<!-- end custom head snippets -->
+
 </head>
 
 <body>
