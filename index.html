@@ -144,9 +144,33 @@
         <!-- 这里是加粗-->
         <b> 
 
+        <!--第1次添加的每日一句-->
+
+       
         <script type="text/javascript" src="https://api.xygeng.cn/one/get/"></script>
+		
+
+		
+		<!--
+		下面这段代码，执行结果是在页面显示一个加载数据的按钮，并找到页面中第一 名 b 的元素，将<script type="text/javascript" src="https://api.xygeng.cn/one/get/"></script>
+		这句代码添加到其中，按一次按钮添加一次。 原先目的是为了实现点击一次按钮，re-call 一次数据回来，暂无法实现，搁置。
+
+        <button id="loadData">加载数据</button>
+
+		<script type="text/javascript">
+		  document.getElementById("loadData").addEventListener("click", function() {
+			var b = document.getElementsByTagName("b")[0];
+			var script = document.createElement("script");
+			script.setAttribute("type", "text/javascript");
+			script.setAttribute("src", "https://api.xygeng.cn/one/get/");
+			b.appendChild(script);
+		  });
+		</script>
+		-->
 
         </b>
+
+
         </font>
         </p>
 
@@ -157,7 +181,7 @@
 			<div class="content_r clearfix">
 				<div class="content_l clearfix">
 					<h2>Hi~ I am JH, Welcome here !</h2>
-					<p class="cc">欢迎来到我的主页，面向google学编程的打工人~</p>
+					<p class="cc">欢迎来到我的主页，目前正在面向google学编程~</p>
 					<p class="cc">爱好科技，热衷提升生产力 !</p>
 					<br>
 					<p class="color_1">I am an ambitious salted fish!</p>
@@ -175,11 +199,12 @@
 			</div>
 		</div>
         <div style="position: absolute; bottom: 10px; right: 10px;" > 
-             <font color="#E6E6FA"; size="0.2px"> 
+             <font color="#E6E6FA"; size="0.1px"> 
               背景源自www.caojiefeng.com;
-              随机文本源自https://api.xygeng.cn;
+              随机文本源自https://api.xygeng.cn以及木头的API，其主页地址为https://v2c.tech;
               主页布局参考博主明金同学分享个人主页案例;
               以上信息如有侵权，请联系删除QQ215147283
+              项目文件内容使用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 授权发布。
               
         </div>
 	</body>
