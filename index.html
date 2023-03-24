@@ -18,7 +18,9 @@
 			}
 
 			a {
-				text-decoration: none;
+				text-decoration: none;  /* 去除下划线 */ 
+				outline: none; /* 去除描边 */
+				border: none; /* 去除边框 */
 			}
 
 			.clearfix:after {
@@ -30,13 +32,19 @@
 			}
 
 			.clearfix {
-				*zoom: 67%;
+				*zoom: 67%; /* 默认加载页面缩放显示的百分比 */
 			}
 
 			body {
-				background: url(https://www.caojiefeng.com/api/bing/1920.php) no-repeat;
+				/*background: url(https://www.caojiefeng.com/api/bing/1920.php) no-repeat;*/
+				/*background: url(https://api.dujin.org/bing/1366.php) no-repeat;*/ 
+				/*如果不设置body的margin和padding为0的话，页面上下左右会出现空白。*/
+				background: url(https://api.dujin.org/bing/1920.php) no-repeat;
 				background-size: cover;
 				background-attachment: fixed;
+				margin: 0;
+				padding: 0;
+
 			}
 
 			.content {
@@ -132,81 +140,250 @@
 			.orange {
 				background-color: orange;
 			}
+			.green  {
+				background-color: green;
+			}
+
+			.pink  {
+				background-color: pink;
+			}
+
+			.iframe-wrapper {
+
+			  	display: inline-flex;
+			  	top: 100%;
+				left: 0;
+				width: 100%;
+				z-index: 9999;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				width: 800px;
+				height: 600px;
+				/*border-style:none;*/
+
+
+
+				
+			}
+
+
+			#iframe-wrapper > #map-frame {
+			  /* 选择#map-frame元素内的<body>元素并修改样式 */
+			  visibility: hidden;
+			  margin: 0;
+			  padding: 0;
+			  /*border-style:none;*/
+			  
+
+			}
+
+			#iframe-wrapper > #motto-frame {
+			  /* 选择#map-frame元素内的<body>元素并修改样式*/
+			  position: relative;
+			  top: 100px;
+			  left: 100px;
+			  visibility: hidden;
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  
+
+
+			}
+
+
+			#iframe-wrapper > #motto-frameM {
+			  /* 选择#map-frame元素内的<body>元素并修改样式*/
+			  position: relative;
+			  top: 100px;
+			  left: 100px;
+			  visibility: hidden;
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  
+
+
+			}
+
+			
+			#motto-container {
+			  position: relative;
+			  /*width: 200px;
+			  height: 600px;*/
+			
+
+			}
+
+			/* 调绿茶骚话对话框大小，可以把frameborder="no" border="0"  的限定先去掉，这样可以看到框的大小和绝对位置 */
+			#motto-frame {
+			  position: absolute;
+			  top: 675px;
+			  left: 1455px;
+			  width: 600px;
+			  height: 200px;
+			  
+
+			}
+
+
+			/* 调渣男骚话对话框大小，可以把frameborder="no" border="0"  的限定先去掉，这样可以看到框的大小和绝对位置 */
+			#motto-frameM {
+			  position: absolute;
+			  top: 675px;
+			  left: 1580px;
+			  width: 600px;
+			  height: 200px;
+			  
+			  
+			}
+
+			
 		</style>
 	</head>
 
 	<body>
-        
+		
+		<iframe id="motto-frame" frameborder="no" border="" src="https://api.lovelive.tools/api/Sweetlothings/1/Senialization/text?genderType=F"></iframe>
+        <!--每日一句-->
         <div style="margin:auto;text-align:center;line-height:30px;">
-
-        <p>
-        <font color="#DCDCDC"; size="4px";height:30px> 
-        <!-- 这里是加粗-->
+        <!--在P中限定句子显示的绝对位置-->
+        <p style="position: absolute; top: 700px; left: 990px;">
+        <font color="#DCDCDC"; size="4.5px";height:30px;> 
         <b> 
-
-        <!--第1次添加的每日一句-->
-
-       
         <script type="text/javascript" src="https://api.xygeng.cn/one/get/"></script>
-		
-
-		
-		<!--
-		下面这段代码，执行结果是在页面显示一个加载数据的按钮，并找到页面中第一 名 b 的元素，将<script type="text/javascript" src="https://api.xygeng.cn/one/get/"></script>
-		这句代码添加到其中，按一次按钮添加一次。 原先目的是为了实现点击一次按钮，re-call 一次数据回来，暂无法实现，搁置。
-
-        <button id="loadData">加载数据</button>
-
-		<script type="text/javascript">
-		  document.getElementById("loadData").addEventListener("click", function() {
-			var b = document.getElementsByTagName("b")[0];
-			var script = document.createElement("script");
-			script.setAttribute("type", "text/javascript");
-			script.setAttribute("src", "https://api.xygeng.cn/one/get/");
-			b.appendChild(script);
-		  });
-		</script>
-		-->
-
         </b>
-
-
         </font>
         </p>
-
         </div>
-        
+
+
+        <!--中心核心内容-->
 		<div class="content">
 			<img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/a21558bd38af167b701fd807f8aba1c6fb0cea7a82e7e80e3f42929bd80325d824208c6954e20b6e16ecc90a041145c2?pictype=scale&from=30113&version=3.3.3.3&fname=%E5%A4%B4%E5%83%8F%E7%94%A8-%E6%9C%80%E4%BD%B3.jpg&size=750" alt="">
 			<div class="content_r clearfix">
 				<div class="content_l clearfix">
-					<h2>Hi~ I am JH, Welcome here !</h2>
-					<p class="cc">欢迎来到我的主页，目前正在面向google学编程~</p>
-					<p class="cc">爱好科技，热衷提升生产力 !</p>
+					<h2>~Hi There~</h2>
+					<p class="cc">~Welcome To My Personal Page~</p>
+					<p class="cc">科技是第一生产力!</p>
 					<br>
 					<p class="color_1">I am an ambitious salted fish!</p>
-					<p class="color_1">坚持是一种可怕的力量~</p>
+					<p class="color_1">咸鱼也怀揣龙宫梦~</p>
 					<br>
-					<p class="deeppink">既然选择了远方，便只顾风雨兼程。</p>
 					<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
+					<p class="deeppink">既然选择了远方，便只顾风雨兼程。</p>
 					<div class="link">
-						<a href="https://freemanryan.github.io/" class="dodgerblue" target="_blank">个人主页</a>
-						<a href="https://github.com/FreemanRyan" class="deeppink_1" target="_blank">GitHub主页</a>
-						<a href="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/22bf88bc987c2334fcb82c66a393652a1abdbb5f0a501512a08103c4f1755ce590a95a6cbd36ab2dff1f6e7b8dcf2dfc?pictype=scale&from=30113&version=3.3.3.3&fname=wechat.jpg&size=750/" class="magenta" target="_blank">微信公众号</a>
-						<a href="https://www.caojiefeng.com/api/bing/1920.php/" class="orange" target="_blank">壁纸地址</a>
+						<a href="https://freemanryan.github.io/" class="dodgerblue" target="_blank">一个简介</a>
+						<a href="https://github.com/FreemanRyan" class="deeppink_1" target="_blank">GitHub开源</a>
+						<a href="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/22bf88bc987c2334fcb82c66a393652a1abdbb5f0a501512a08103c4f1755ce590a95a6cbd36ab2dff1f6e7b8dcf2dfc?pictype=scale&from=30113&version=3.3.3.3&fname=wechat.jpg&size=750/" class="magenta" target="_blank">一个订阅号</a>
+						<a href="https://api.dujin.org/bing/1920.php/" class="orange" target="_blank">点击白嫖壁纸</a>
+
+
+						<!--
+						调用2个以上的iframe,要把他们放在同一个div中，否则第二个iframe调用的内容布局可能会错位 
+						-->                        
+
+						<div class="iframe-wrapper">
+					        <a onclick="showMap()" class="green" target="_blank">一个地点</a>
+					        <a onclick="showmotto()" class="pink" target="_blank">一杯乌龙</a>
+					        <a onclick="showmottoM()" class="green" target="_blank">一杯绿茶</a>
+					        <iframe id="map-frame" frameborder="no" border="0" width="800px" height="600px"></iframe>
+					        <iframe id="motto-frame" frameborder="no" border="0"></iframe>
+					        <iframe id="motto-frameM" frameborder="no" border="0"></iframe>
+				      
+					        <script>
+							function showMap() {
+								var mapUrl = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2194102.871989243!2d-18.533333!3d64.65000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-CN!2s!4v1674447168409!5m2!1szh-CN!2s/";
+								var mapFrame = document.getElementById("map-frame");
+								
+								if (mapFrame.src == mapUrl) {
+									closeMap();
+								} else {
+									mapFrame.setAttribute("src", mapUrl);
+								}
+							}
+
+							function closeMap() {
+								var mapFrame = document.getElementById("map-frame");
+								mapFrame.setAttribute("src", "");
+
+							}
+							</script>
+							
+
+							<script>
+							function showmotto() {
+								var mottoUrl = "https://api.lovelive.tools/api/SweetNothings/1/Serialization/text?genderType=F";
+								// GET https://api.lovelive.tools/api/SweetNothings/:count/Serialization/:serializationType?genderType=:genderType
+								// serializationType：返回内容的格式，可以选择 Text 或 Json 格式。
+								// count：要获取的数量。如果不在 Url 中使用这个参数 ，将默认获取 1 个句子。
+								// genderType：内容的身份分类，可以选择 M 或 F 。M 为 “渣男”，F 为 “绿茶”。
+								var mottoFrame = document.getElementById("motto-frame");
+								
+								
+								if (mottoFrame.src == mottoUrl) {
+									closemotto();
+								} else {
+									mottoFrame.setAttribute("src", mottoUrl);
+									
+								}
+							}
+
+							function closemotto() {
+								var mottoFrame = document.getElementById("motto-frame");
+								mottoFrame.setAttribute("src", "");
+							}
+							</script>
+
+
+							<script>
+							function showmottoM() {
+								var mottoUrlM = "https://api.lovelive.tools/api/SweetNothings/1/Serialization/text?genderType=M";
+								// GET https://api.lovelive.tools/api/SweetNothings/:count/Serialization/:serializationType?genderType=:genderType
+								// serializationType：返回内容的格式，可以选择 Text 或 Json 格式。
+								// count：要获取的数量。如果不在 Url 中使用这个参数 ，将默认获取 1 个句子。
+								// genderType：内容的身份分类，可以选择 M 或 F 。M 为 “渣男”，F 为 “绿茶”。
+								var mottoFrameM = document.getElementById("motto-frameM");
+								
+								if (mottoFrameM.src == mottoUrlM) {
+									closemottoM();
+								} else {
+									mottoFrameM.setAttribute("src", mottoUrlM);
+									
+								}
+							}
+
+							function closemottoM() {
+								var mottoFrameM = document.getElementById("motto-frameM");
+								mottoFrameM.setAttribute("src", "");
+							}
+							</script>
+
+
+
+
+
+
+ 						</div>
+
 					</div>
+
 				</div>
 			</div>
 		</div>
         <div style="position: absolute; bottom: 10px; right: 10px;" > 
              <font color="#E6E6FA"; size="0.1px"> 
-              背景源自www.caojiefeng.com;
+              背景源自https://api.dujin.org/bing/1920.php;
               随机文本源自https://api.xygeng.cn以及木头的API，其主页地址为https://v2c.tech;
               主页布局参考博主明金同学分享个人主页案例;
               以上信息如有侵权，请联系删除QQ215147283
               项目文件内容使用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 授权发布。
               
         </div>
+
 	</body>
 
 </html>
+
