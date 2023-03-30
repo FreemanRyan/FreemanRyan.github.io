@@ -217,13 +217,21 @@
 
 			}
 
-			/* 调绿茶骚话对话框大小，可以把frameborder="no" border="0"  的限定先去掉，这样可以看到框的大小和绝对位置 */
+			/* 调绿茶骚话对话框大小，可以把frameborder="no" border="0"  的限定先去掉，这样可以看到框的大小和绝对位置 
+			   width: 50vw;: 设置iframe元素的宽度为视口宽度的50%。
+			   height: 50vh;: 设置iframe元素的高度为视口高度的50%。
+			   transform-origin: 0 0;: 设置iframe元素的变换基点为左上角，即(0, 0)坐标。
+			   transform: scale(2);: 对iframe元素进行缩放变换，放大两倍。
+
+			*/
 			#motto-frame {
 			  position: absolute;
 			  top: 675px;
 			  left: 1455px;
 			  width: 600px;
 			  height: 200px;
+			  transform-origin: 0 0;
+			  transform: scale(2);
 			  
 
 			}
@@ -236,7 +244,8 @@
 			  left: 1580px;
 			  width: 600px;
 			  height: 200px;
-			  
+  			  transform-origin: 0 0;
+			  transform: scale(2);
 			  
 			}
 
