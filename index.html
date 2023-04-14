@@ -156,7 +156,24 @@
         <p>© 2023 Joseph | <a href="http://beian.miit.gov.cn">湘ICP备18015792号</a></p>
         -->
         <p><a href="215147283@qq.com/">© 2023 Joseph</a> | <a href="https://vercel.com/">Supported By Vercel</a></p>
-        <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">License</a> | <a href="https://gitee.com/n0ts/NutssssIndex/">THEME By @n0ts</a></p>
+        <p>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">License</a> | 
+        <a href="https://gitee.com/n0ts/NutssssIndex/">THEME By @n0ts</a> | 
+        <a id="result" href=""></a>
+        <script type="text/javascript">
+            fetch('https://api.xygeng.cn/bing')
+                .then(response => response.json())
+                .then(data => {
+                    const title = data.data.title;
+                    const copyright = data.data.copyright;
+                    const url = data.data.url
+                    const resultElement = document.getElementById('result');
+                    resultElement.textContent = `${title} - ${copyright}`;
+                    resultElement.href = url;
+                })
+                .catch(error => console.error(error));
+        </script>
+        </p>
 
 
     </div>
