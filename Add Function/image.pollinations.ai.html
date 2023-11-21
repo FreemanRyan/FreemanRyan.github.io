@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pollinations API Input</title>
+</head>
+<body>
+
+<p>在下面的输入框中输入prompt后的内容：</p>
+<input type="text" id="promptInput" placeholder="输入您的内容">
+
+<button onclick="generateLink()">确定</button>
+<button onclick="clearInput()">清除</button>
+
+<script>
+    function generateLink() {
+        var promptText = document.getElementById("promptInput").value;
+        var apiUrl = `https://image.pollinations.ai/prompt/<${promptText}>`;
+        window.location.href = apiUrl;
+    }
+
+    function clearInput() {
+        document.getElementById("promptInput").value = '';
+    }
+</script>
+
+</body>
+</html>
