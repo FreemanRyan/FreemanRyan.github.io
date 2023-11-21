@@ -63,7 +63,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?18e0c5b228930e44bf10745b2fe27f70";
+      hm.src = "https://hm.baidu.com/hm.js?76aac5edf2019057d24d795f647d186f";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
@@ -148,9 +148,32 @@
 
                     <span style="color: rgb(0, 190, 0);">root@HJH</span>
                     <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">cat /advertisement.txt</span>
+                    <span style="color: rgb(39, 39, 39);">cat /AI 绘图.txt</span>
+                    <!--
                     <p>------广告位招租，量大从优------</p>
                     <p>Because of the way you are looking at me now.</p>
+                    -->
+                    <p>
+                    <input type="text" id="promptInput" placeholder="输入您的内容">
+
+                    <button onclick="generateLink()">确定</button>
+                    <button onclick="clearInput()">清除</button>
+
+                    <script>
+                        function generateLink() {
+                            var promptText = document.getElementById("promptInput").value;
+                            var apiUrl = `https://image.pollinations.ai/prompt/<${promptText}>`;
+                            window.location.href = apiUrl;
+                        }
+
+                        function clearInput() {
+                            document.getElementById("promptInput").value = '';
+                        }
+                       
+                    </script>
+                    </p>
+
+
 
                    
                     <!-- 调用google map -->
